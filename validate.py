@@ -1,22 +1,10 @@
-from lxml import etree
+import xmlschema as xml
+xml_file = "employees.xml"
+xsd_file = "employee_schema.xsd"
 
-def validate_xml(xml_file, xsd_file):
-    
-    xml_doc = etree.parse(xml_file)
-    schema = etree.XMLSchema(file=xsd_file)
-
-   
-    is_valid = schema.validate(xml_doc)
-
-    
-    if is_valid:
-        print("XML document is valid.")
-    else:
-        print("XML document is not valid. Validation errors:")
-        for error in schema.error_log:
-            print(f"Line {error.line}, Column {error.column}: {error.message}")
-
-if __name__ == "__main__":
-    xml_file = "employees.xml"
-    xsd_file = "employee_schema.xsd"
-    validate_xml(xml_file, xsd_file)
+validator = xml.XMLSchema(xsd_file)
+if validator.is_valid(xml_file):
+    print("XML file is valid against the XSD schema.")
+else:
+    print("XML file is not valid against the XSD schema.")
+    print(validator.validate(xml_file))
