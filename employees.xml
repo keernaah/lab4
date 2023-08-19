@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee id="1">
+        <personal_info>
+            <first_name>Jyothi</first_name>
+            <last_name>Gowda</last_name>
+            <date_of_birth>1991-07-15</date_of_birth>
+            <gender>Female</gender>
+        </personal_info>
+        <employment_info>
+            <position>Manager</position>
+            <salary>75000</salary>
+        </employment_info>
+        <contact_info>
+            <email>jyothigowda@email.com</email>
+            <phone_number>9234567891</phone_number>
+        </contact_info>
+    </employee>
+    <employee id="2">
+        <personal_info>
+            <first_name>Jithesh</first_name>
+            <last_name>Naik</last_name>
+            <date_of_birth>1995-09-2</date_of_birth>
+            <gender>Male</gender>
+        </personal_info>
+        <employment_info>
+            <position>Developer</position>
+            <salary>60000</salary>
+        </employment_info>
+        <contact_info>
+            <email>naikjithesh@email.com</email>
+            <phone_number>9876577210</phone_number>
+        </contact_info>
+    </employee>
+    <employee id="3">
+        <personal_info>
+            <first_name>Manas</first_name>
+            <last_name>Jones</last_name>
+            <date_of_birth>1988-12-10</date_of_birth>
+            <gender>Male</gender>
+        </personal_info>
+        <employment_info>
+            <position>Analyst</position>
+            <salary>55000</salary>
+        </employment_info>
+        <contact_info>
+            <email>manasjones@gmail.com</email>
+            <phone_number>9551234667</phone_number>
+        </contact_info>
+    </employee>
+</employees>
+
